@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// NavBar css
+#navBarCustom {
+    // box-shadow: 5px 3px 5px -3px gray;
+    text-decoration: none;
+    // border-radius: 5px;
+}
+
+#logoMenu {
+    width: 50px;
+    height: 50px;
+    min-height: min-content;
+    transition: 1s;
+    margin-right: 10px;
+    transition: all 1.5s;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+.userName {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: #111;
+
+    &:hover {
+        text-shadow: 1px 1px 0px rgb(0, 0, 0);
+        color: rgb(15, 15, 15);
+    }
+
+}
+
+.userNameBox {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: rgb(37, 37, 37);
+
+    &:hover {
+        text-shadow: 1px 1px 0px rgb(59, 59, 59);
+        color: rgb(0, 0, 0);
+    }
+}
+
+// home page css
+
+#collegeName {
+    text-transform: none;
+    text-decoration: none;
+}
+
+#labName {
+    text-transform: none;
+    text-decoration: none;
+}
+
+#computerImage {
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+
+
+@media (min-width:1150px) {
+    #akashImage {
+        margin-left: 3rem;
+        width: 60%;
+    }
+}
+
+#computerImage {
+    width: 80%;
+    height: 18rem;
+    min-width: auto;
+    min-height: auto;
+    // border-radius: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 10px -3px black;
+
+    &:hover {
+        box-shadow: 0px 0px 15px -3 px rgb(42, 117, 247);
+    }
+}
+
+.iconSimple {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+
+// contact us
+
+#addContactUs {
+    color: white;
+    outline: none;
+    background-color: rgb(0, 89, 255);
+    height: 50px;
+    width: 200px;
+
+    &:hover {
+        background-color: green;
+    }
+}
+
+// sign in page
+
+
+// forum page
+.chatBox {
+    max-width: 500px;
+}
+
+#chatAdd {
+    outline: none;
+
+    &:hover {
+        color: green;
+    }
+}
+
+// chats
+.chatUsername {
+    font-family: cursive;
+}
+
+.chatChat {
+    font-family: cursive;
+}
+
+
+
+
+// new css 
+// for homepage
+// #profileSection,
+#socialSection {
+    text-align: center;
+}
+
+#socialHeading {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+#headingBox {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+    // margin-top: 1%;
+    // padding: 2% 2%;
+    // box-shadow: 5px 5px 10px -3px black;
+    // border-radius: 10px;
+    // &:hover {
+    //     // box-shadow: 5px 5px 10px -3px rgb(0, 89, 255);
+    // }
+    background-image: url("./Resources/space.png");
+    // background-color: blue;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // overflow: hidden;
+}
+
+
+#headingText {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    padding: 10px;
+    font-style: italic;
+}
+
+// computer icon filter shadow
+.computerIcon {
+    animation: iconShadow 1s linear infinite;
+}
+
+@keyframes iconShadow {
+    0% {
+        filter: drop-shadow(0px 0px 0px rgba(0, 89, 255, 0.562));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 2px rgba(0, 89, 255, 0.774));
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 4px rgb(0, 89, 255));
+    }
+}
+
+
+
+// for animation purpuse only
+// #headinTextAkashName {
+//     color: rgb(255, 255, 255);
+//     -webkit-text-stroke: default rgb(204, 221, 253);
+//     position: relative;
+
+//     &::before {
+//         position: absolute;
+//         // text-align: center;
+//         content: "Akash Suresh Ghadge";
+//         color: rgb(0, 1, 255);
+//         border-right: 2px solid rgb(0, 1, 255);
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         animation: widthChange 3s linear infinite;
+//         overflow: hidden;
+//     }
+// }
+
+@keyframes widthChange {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 19rem;
+    }
+
+    75% {
+        width: 19rem;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+// about section
+#parentAboutBox {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutBox {
+    margin-top: 1rem;
+    padding: 5%;
+    width: 80%;
+    background-color: rgb(0, 89, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px -3px black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    &:hover {
+        box-shadow: 5px 5px 10px -3px rgb(0, 89, 255);
+    }
+}
+
+#aboutText {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+
+// sign fields
+.signInUpHead {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.labelSign {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fieldSign {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+// contact us
+.contactHead {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    animation: dotDotEffect 1s linear infinite alternate;
+}
+
+
+
+@keyframes dotDotEffect {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+
+    50% {
+        color: white;
+        -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.labelContact {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fieldContact {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+@media(max-width:786px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+
+
+// profile componenent
+.profileMain {
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.profileHeading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(0, 110, 255);
+}
+
+.profileHeading2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(0, 110, 255);
+}
+
+.profileHeading3 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 110, 255);
+}
+
+#akashImage {
+    width: 20rem;
+    height: 16rem;
+    min-width: auto;
+    min-height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px -3px black;
+    border: solid 10px rgb(195, 217, 255);
+
+    &:hover {
+        box-shadow: 0px 0px 15px -3px rgb(0, 89, 255);
+    }
+}
+
+@media (max-width:400px) {
+    #akashImage {
+        width: 14rem;
+        height: 12rem;
+    }
+}
+
+
+.grandParentProfile {
+    height: auto;
+    width: 100vw;
+}
+
+.parentProfile {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+}
+
+.child1Profile,
+.child2Profile,
+.child3Profile,
+.child4Profile {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    flex: 1 1 400px;
+    margin: 4%;
+}
+
+.child2Profile {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    flex: 1 1 400px;
+    width: 200px;
+}
+
+.child3Profile {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    flex: 1 1 400px;
+    width: 200px;
+}
+
+.aboutTextProfile {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-bullets {
+    list-style: none;
+}
+
+
+// project tab
+@mixin headingCommonProject {
+    color: rgb(46, 46, 46);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projectHeading {
+    @include headingCommonProject();
+    font-size: 5rem;
+}
+
+.projectHeading2 {
+    @include headingCommonProject();
+    font-size: 1rem;
+}
+
+
+
+// oneProject
+.projectImage {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+}
+
+.projectMain {
+    margin-bottom: 4rem;
+}
+
+.descProjectOne {
+    color: #111;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heaadingProjectOne {
+    color: #111;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:600px) {
+    .projectImage {
+        height: 50vh;
+    }
+}
