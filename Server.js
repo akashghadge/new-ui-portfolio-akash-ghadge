@@ -10,7 +10,7 @@ require("dotenv").config()
 const uri = process.env.MONGO_URI;
 
 
-mongoose.connect("mongodb://localhost/portfolio-akash", { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }).then((data) => {
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }).then((data) => {
     console.log("db connected");
 }).catch((err) => {
     console.log(err);
